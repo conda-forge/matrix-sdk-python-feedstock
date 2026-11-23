@@ -15,7 +15,7 @@ source:
     - conda-toolchain.patch
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       CARGO_NET_GIT_FETCH_WITH_CLI: "true"
