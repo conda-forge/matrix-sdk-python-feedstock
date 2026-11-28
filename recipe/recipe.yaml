@@ -13,6 +13,8 @@ source:
   patches:
     # Respect conda's Rust target, build the binding generator for the host, and keep Cargo.lock unchanged.
     - conda-toolchain.patch
+    # Update Rust Zstd bindings to remove experimental APIs deleted in shared Zstd 1.6.
+    - zstd-1.6.patch
 
 build:
   number: 2
